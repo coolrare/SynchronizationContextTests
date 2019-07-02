@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<h2>SynchronizationContext and HttpContext</h2>
+
+<hr />
+
+SynchronizationContext = @ViewBag.SynchronizationContext
+<br />
+HttpContext.Current = @ViewBag.HttpContext
+<br />
+System.Web.HttpContext.Current.Items["data"] (before) = @System.Web.HttpContext.Current.Items["data"]
+<br />
+System.Web.HttpContext.Current.Items["data"] (after) = @ViewBag.ItemsData
+<br />
+<h2>ThreadID1 = @ViewBag.ThreadID1</h2>
+<br />
+<h2>@ViewBag.Data</h2>
+<br />
+<h2>ThreadID2 = @ViewBag.ThreadID2</h2>
+<br />
+ThreadID3 = @ViewBag.ThreadID3
+<br />
+ThreadID4 = @ViewBag.ThreadID4
